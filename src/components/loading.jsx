@@ -1,11 +1,9 @@
-import ReactLoading from 'react-loading'
-
 const Loading = () => {
-    return (
-        <div className="loading">
-            <ReactLoading 
-            type='spin'
-            color='violet'/>
-        </div>
-    )};
-export default Loading
+  return (
+    <div id="Loading" className="flex flex-col justify-center items-center mt-70 mb-110 mx-145">
+      <p>Wsh ça fonctionne ????????????????????</p>
+    </div>
+  );
+};
+
+export default Loading;
