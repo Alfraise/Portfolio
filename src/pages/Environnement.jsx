@@ -1,9 +1,9 @@
-const Contact = () => {
+const Environnement = () => {
     return (
         <div className="flex flex-col justify-center items-center mt-50">
-
+            <p>Hello</p>
         </div>
     );
   };
   
-  export default Contact;
+  export default Environnement;
