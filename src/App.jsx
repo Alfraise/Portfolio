@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
 import Loading from './components/loading';
 import Accueil from './pages/acceuil';
 import Projets from './pages/projets';
-import Contact from './pages/contact';
+import Environnement from "./pages/Environnement";
 import Navbar from './components/navbar';
 
 const App = () => {
@@ -22,15 +21,15 @@ const App = () => {
     <div className='Content'>
       <Navbar />
       <div id='pages' className='rounded-lg mt-10 static'>
-        {isLoading ? <Loading /> :
           <div>
+          {isLoading ? <Loading /> :
               <Routes>
                 <Route path="/Home"element={<Accueil />}/>
                 <Route path="/Projets" element={<Projets />}/>
-                <Route path="/Contact" element={<Contact />}/>
+                <Route path="Environnement" element={<Environnement />}/>
                 <Route path="*" element={<Accueil />}/>
-              </Routes>
-          </div>}
+              </Routes>}
+          </div>
       </div>
     </div>
   );
