@@ -1,7 +1,7 @@
 const Environnement = () => {
     return (
         <div className="flex flex-col justify-center items-center mt-50">
-            <p>Hello</p>
+            <p>En cours</p>
         </div>
     );
   };
